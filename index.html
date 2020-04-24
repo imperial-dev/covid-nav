@@ -8,10 +8,10 @@
        * element that contains the map. */
       #map {
         position: relative;
-        width: 35%;
-        height: 350px;
+        width: 60%;
+        height: 600px;
         background-color: #CCC;
-        margin: 1% 0 0 15%;
+        margin: 1% 0 0 5%;
       }
       /* Optional: Makes the sample page fill the window.*/
       html, body {
@@ -42,6 +42,14 @@
         top: 10px;
         z-index: 5;
       } */
+
+      .twitterborder {
+        width:27.5%;
+        height:600px;
+        float:right;
+        margin: 0 0 0 10%;
+        background:#707070;
+      }
     </style>
   </head>
 
@@ -53,7 +61,15 @@
 
     </div>
 
+        <div class="twitterborder">
+
+        <a class="twitter-timeline" data-lang="en" data-width="400" data-height="800" data-theme="light" href="https://twitter.com/NCDCgov?ref_src=twsrc%5Etfw">Tweets by NCDCgov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      </div>
+
     <div id="map"></div>
+
+    <div>
     <script>
 
       // This example requires the Visualization library. Include the libraries=visualization
@@ -173,8 +189,10 @@
         ];
       }
     </script>
+  </div>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlBqyDfcmUq6A6sCLV3yTfN-w8HMzIpRU&libraries=visualization&callback=initMap">
     </script>
+
   </body>
 </html>
