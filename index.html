@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Heatmaps</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -46,15 +50,16 @@
 
   <body>
 
-    <div>
 
-      <h1 style="color:black"><center>COVID-NAV</center></h1>
-
+    <div class="jumbotron text-center">
+      <h1>COVID NAV</h1>
+      <p>Tracking Covid 19 Data Across Nigeria</p>
     </div>
 
     <div id="map"></div>
 
-    <div>
+    <div class="container">
+
     <script>
 
       // This example requires the Visualization library. Include the libraries=visualization
@@ -178,6 +183,28 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlBqyDfcmUq6A6sCLV3yTfN-w8HMzIpRU&libraries=visualization&callback=initMap">
     </script>
+
+
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>COVID-19 Symptoms:</h3>
+        <li>Fever</li>
+        <li>Cough</li>
+        <li>Shortness of breath or difficulty breathing</li>
+        <li>Chills</li>
+        <li>Repeated shaking with chills</li>
+        <li>Muscle pain</li>
+        <li>Headache</li>
+        <li>Sore throat</li>
+        <li>New loss of taste or smell</li>
+
+  </div>
+      <div class="col-sm-8">
+        <a class="twitter-timeline" data-lang="en" data-width="750" data-height="500" data-theme="light" href="https://twitter.com/NCDCgov?ref_src=twsrc%5Etfw">Tweets by NCDCgov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>
