@@ -97,6 +97,12 @@
 
     </div>
 
+    <div class = "container" id="floating-panel">
+
+    <p>Tap pins for stats</p>
+
+    </div>
+
     <div id="map"></div>
 
     <div class="container">
@@ -119,6 +125,8 @@ addMarker({
 });
 */
       var map, heatmap;
+
+
 
       var NIGERIA_BOUNDS = {
               north: 17,
@@ -160,6 +168,9 @@ addMarker({
             strictBounds: false,
           }
         });
+
+        var controlDiv = document.getElementById('floating-panel');
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(controlDiv);
 
         function addMarker(props){
           var marker = new google.maps.Marker({
@@ -417,6 +428,7 @@ addMarker({
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8xpyJr0hKecJEZi2_WNeoF3zsNqjA018&libraries=visualization&callback=initMap">
     </script>
+
 
     <div class="container">
       <div class="row">
