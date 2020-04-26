@@ -97,11 +97,7 @@
 
     </div>
 
-    <div class = "container" id="floating-panel">
-
-    <p>Tap pins for stats</p>
-
-    </div>
+    
 
     <div id="map"></div>
 
@@ -169,8 +165,7 @@ addMarker({
           }
         });
 
-        var controlDiv = document.getElementById('floating-panel');
-        map.controls[google.maps.ControlPosition.TOP_CENTER].push(controlDiv);
+
 
         function addMarker(props){
           var marker = new google.maps.Marker({
