@@ -190,7 +190,7 @@ addMarker({
          addMarker({
           //Lagos
  	         coords:{lat:6.56, lng:3.22},
- 	         content:'<h4><u>Lagos</u></h4><p><b>Total: 764</b></p><p><b>Active: 602</b></p><p><b>Recovered:143</b></p>'
+ 	         content:'<h4><u>Lagos</u></h4><p><b>Total: 844</b></p><p><b>Active: 682</b></p><p><b>Recovered:143</b></p>'
           });
           addMarker({
           //Abuja
@@ -378,72 +378,75 @@ addMarker({
       // Heatmap data: 500 Points
       function getPoints() {
         return [
-            //Lagos
-            {location: new google.maps.LatLng(6.56, 3.22), weight: 731},
-            //Abuja
-            {location: new google.maps.LatLng(9.06, 7.38), weight: 141},
-            //Kano
-            {location: new google.maps.LatLng(12, 8.52), weight: 77},
-            //Osun
-            {location: new google.maps.LatLng(7.77, 4.57), weight: 34},
-            //Oyo
-            {location: new google.maps.LatLng(7.38, 3.90), weight: 21},
-            //Edo
-            {location: new google.maps.LatLng(6.32, 5.60), weight: 25},
-            //Ogun
-            {location: new google.maps.LatLng(7.15,3.33 ), weight: 35},
-            //Katsina
-            {location: new google.maps.LatLng(12.989998, 7.61), weight: 30},
-            //Kwara
-            {location: new google.maps.LatLng(8.50, 4.55), weight: 11},
-            //Akwa Ibom
-            {location: new google.maps.LatLng(5.05, 7.93), weight: 12},
-            //Kaduna
-            {location: new google.maps.LatLng(10.51498, 7.4405), weight: 15},
-            //Bauchi
-            {location: new google.maps.LatLng(10.3114, 9.8338), weight: 14},
-            //Gombe
-            {location: new google.maps.LatLng(10.28, 11.17), weight: 35},
-            //Delta
-            {location: new google.maps.LatLng(6.75, 6.18), weight: 6},
-            //Ekiti
-            {location: new google.maps.LatLng(7.62, 5.22), weight: 8},
-            //Borno
-            {location: new google.maps.LatLng(11.83, 13.15), weight: 30},
-            //Ondo
-            {location: new google.maps.LatLng(7.25, 5.20), weight: 8},
-            //Abia
-            {location: new google.maps.LatLng(5.53, 7.48), weight: 2},
-            //Enugu
-            {location: new google.maps.LatLng(6.50, 7.50), weight: 2},
-            //Rivers
-            {location: new google.maps.LatLng(4.74, 7), weight: 6},
-            //Niger
-            {location: new google.maps.LatLng(9.62, 6.55), weight: 2},
-            //Jigawa
-            {location: new google.maps.LatLng(12.58, 8.97), weight: 2},
-            //Benue
-            {location: new google.maps.LatLng(7.3311, 8.53404), weight: 1},
-            //Anambra
-            {location: new google.maps.LatLng(6.20, 7.73), weight: 1},
-            //Sokoto
-            {location: new google.maps.LatLng(13.0043, 5.2517), weight: 10},
-            //Adamawa
-            {location: new google.maps.LatLng(9.200962, 12.496269), weight: 1},
-            //Plateau
-            {location: new google.maps.LatLng(9.897422, 8.865438), weight: 1},
-            //Zamfara
-            {location: new google.maps.LatLng(12.377907, 6.298153), weight: 2},
-            //Imo
-            {location: new google.maps.LatLng(5.476459, 7.019153), weight: 1},
-            //Taraba
-            {location: new google.maps.LatLng(8.198020, 10.835169), weight: 6},
-            //Bayelsa
-            {location: new google.maps.LatLng(4.849439, 6.083899), weight: 1},
-            //Ebonyi
-            {location: new google.maps.LatLng(6.277660, 8.012913), weight: 1},
-            //Kebbi
-            {location: new google.maps.LatLng(11.426986, 5.639439), weight: 1},
+          //Lagos
+          {location: new google.maps.LatLng(6.56, 3.22), weight: 844},
+          //Abuja
+          {location: new google.maps.LatLng(9.06, 7.38), weight: 158},
+          //Kano
+          {location: new google.maps.LatLng(12, 8.52), weight: 115},
+          //Osun
+          {location: new google.maps.LatLng(7.77, 4.57), weight: 34},
+          //Oyo
+          {location: new google.maps.LatLng(7.38, 3.90), weight: 21},
+          //Edo
+          {location: new google.maps.LatLng(6.32, 5.60), weight: 30},
+          //Ogun
+          {location: new google.maps.LatLng(7.15,3.33 ), weight: 50},
+          //Katsina
+          {location: new google.maps.LatLng(12.989998, 7.61), weight: 30},
+          //Kwara
+          {location: new google.maps.LatLng(8.50, 4.55), weight: 11},
+          //Akwa Ibom
+          {location: new google.maps.LatLng(5.05, 7.93), weight: 12},
+          //Kaduna
+          {location: new google.maps.LatLng(10.51498, 7.4405), weight: 15},
+          //Bauchi
+          {location: new google.maps.LatLng(10.3114, 9.8338), weight: 29},
+          //Gombe
+          {location: new google.maps.LatLng(10.28, 11.17), weight: 46},
+          //Delta
+          {location: new google.maps.LatLng(6.75, 6.18), weight: 7},
+          //Ekiti
+          {location: new google.maps.LatLng(7.62, 5.22), weight: 8},
+          //Borno
+          {location: new google.maps.LatLng(11.83, 13.15), weight: 53},
+          //Ondo
+          {location: new google.maps.LatLng(7.25, 5.20), weight: 8},
+          //Abia
+          {location: new google.maps.LatLng(5.53, 7.48), weight: 2},
+          //Enugu
+          {location: new google.maps.LatLng(6.50, 7.50), weight: 3},
+          //Rivers
+          {location: new google.maps.LatLng(4.74, 7), weight: 7},
+          //Niger
+          {location: new google.maps.LatLng(9.62, 6.55), weight: 2},
+          //Jigawa
+          {location: new google.maps.LatLng(12.58, 8.97), weight: 7},
+          //Benue
+          {location: new google.maps.LatLng(7.3311, 8.53404), weight: 1},
+          //Anambra
+          {location: new google.maps.LatLng(6.20, 7.73), weight: 1},
+          //Sokoto
+          {location: new google.maps.LatLng(13.0043, 5.2517), weight: 19},
+          //Adamawa
+          {location: new google.maps.LatLng(9.200962, 12.496269), weight: 1},
+          //Plateau
+          {location: new google.maps.LatLng(9.897422, 8.865438), weight: 1},
+          //Zamfara
+          {location: new google.maps.LatLng(12.377907, 6.298153), weight: 4},
+          //Imo
+          {location: new google.maps.LatLng(5.476459, 7.019153), weight: 1},
+          //Taraba
+          {location: new google.maps.LatLng(8.198020, 10.835169), weight: 8},
+          //Bayelsa
+          {location: new google.maps.LatLng(4.849439, 6.083899), weight: 1},
+          //Ebonyi
+          {location: new google.maps.LatLng(6.277660, 8.012913), weight: 1},
+          //Kebbi
+          {location: new google.maps.LatLng(11.426986, 5.639439), weight: 1},
+          //Nasarawa
+          {location: new google.maps.LatLng(8.551146, 7.712815), weight: 1},
+
 
         ];
       }
